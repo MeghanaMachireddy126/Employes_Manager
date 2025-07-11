@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <button onclick="window.location.href='index.html'" style="margin-bottom: 20px;">← Back to Home</button>
+
+    <title>Add/Edit Employee</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="form-title">Add/Edit Employee</h1>
+        <form id="employee-form">
+            <input type="hidden" id="employee-id">
+            <label>First Name:</label><input type="text" id="first-name" required><br>
+            <label>Last Name:</label><input type="text" id="last-name" required><br>
+            <label>Email:</label><input type="email" id="email" required><br>
+            <label>Department:</label><input type="text" id="department" required><br>
+            <label>Role:</label><input type="text" id="role" required><br>
+            <button type="submit">Save</button>
+            <button type="button" onclick="window.location.href='dashboard.html'">Cancel</button>
+        </form>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
